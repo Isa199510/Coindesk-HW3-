@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F4DF96E9292B77AE00C6A070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF96E8292B77AE00C6A070 /* AppDelegate.swift */; };
 		F4DF96EB292B77AF00C6A070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF96EA292B77AF00C6A070 /* SceneDelegate.swift */; };
-		F4DF96ED292B77AF00C6A070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF96EC292B77AF00C6A070 /* ViewController.swift */; };
 		F4DF96F0292B77AF00C6A070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DF96EE292B77AF00C6A070 /* Main.storyboard */; };
 		F4DF96F2292B77B100C6A070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DF96F1292B77B100C6A070 /* Assets.xcassets */; };
 		F4DF96F5292B77B100C6A070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DF96F3292B77B100C6A070 /* LaunchScreen.storyboard */; };
+		F4DF9701292B785600C6A070 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF9700292B785600C6A070 /* Link.swift */; };
+		F4DF9703292B786400C6A070 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF9702292B786400C6A070 /* NetworkManager.swift */; };
+		F4DF9705292B78CC00C6A070 /* CoindeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF9704292B78CC00C6A070 /* CoindeskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4DF96E5292B77AE00C6A070 /* Coindesk(HW3).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coindesk(HW3).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DF96E8292B77AE00C6A070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4DF96EA292B77AF00C6A070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4DF96EC292B77AF00C6A070 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4DF96EF292B77AF00C6A070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4DF96F1292B77B100C6A070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4DF96F4292B77B100C6A070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4DF96F6292B77B100C6A070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DF9700292B785600C6A070 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		F4DF9702292B786400C6A070 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F4DF9704292B78CC00C6A070 /* CoindeskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoindeskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		F4DF96E7292B77AE00C6A070 /* Coindesk(HW3) */ = {
 			isa = PBXGroup;
 			children = (
-				F4DF96E8292B77AE00C6A070 /* AppDelegate.swift */,
-				F4DF96EA292B77AF00C6A070 /* SceneDelegate.swift */,
-				F4DF96EC292B77AF00C6A070 /* ViewController.swift */,
-				F4DF96EE292B77AF00C6A070 /* Main.storyboard */,
+				F4DF96FD292B77D900C6A070 /* ViewControllers */,
+				F4DF96FC292B77CF00C6A070 /* SupportFiles */,
+				F4DF96FF292B784100C6A070 /* Network */,
+				F4DF96FE292B77E500C6A070 /* Storyboards */,
 				F4DF96F1292B77B100C6A070 /* Assets.xcassets */,
-				F4DF96F3292B77B100C6A070 /* LaunchScreen.storyboard */,
 				F4DF96F6292B77B100C6A070 /* Info.plist */,
 			);
 			path = "Coindesk(HW3)";
+			sourceTree = "<group>";
+		};
+		F4DF96FC292B77CF00C6A070 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF96E8292B77AE00C6A070 /* AppDelegate.swift */,
+				F4DF96EA292B77AF00C6A070 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F4DF96FD292B77D900C6A070 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF9704292B78CC00C6A070 /* CoindeskViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4DF96FE292B77E500C6A070 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF96EE292B77AF00C6A070 /* Main.storyboard */,
+				F4DF96F3292B77B100C6A070 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F4DF96FF292B784100C6A070 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF9700292B785600C6A070 /* Link.swift */,
+				F4DF9702292B786400C6A070 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DF96ED292B77AF00C6A070 /* ViewController.swift in Sources */,
+				F4DF9703292B786400C6A070 /* NetworkManager.swift in Sources */,
+				F4DF9701292B785600C6A070 /* Link.swift in Sources */,
 				F4DF96E9292B77AE00C6A070 /* AppDelegate.swift in Sources */,
 				F4DF96EB292B77AF00C6A070 /* SceneDelegate.swift in Sources */,
+				F4DF9705292B78CC00C6A070 /* CoindeskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
